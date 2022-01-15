@@ -23,13 +23,6 @@ def welcome_screen():
     print_withpause("Let's get started!", 3)
     loading_screen()
 
-# Setup new player    
-def player_setup():
-    player = input("What is your player name? \n ")
-    happy_phrase = input(" What's a phrase that you say when you're happy? \n ")
-    sad_phrase = input("What's a phrase you say when something goes wrong? \n ")
-    loading_screen()
-
 def story_setup():
     loading_screen("Highway 11: 6 hours since the start of the trip")  
 
