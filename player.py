@@ -1,14 +1,13 @@
-def player_attribute():
-    player_name = input("What is your name? \n")
-    player_happy = input("What's something that you say when you are happy? \n")
-    player_sad = input(" What's something that you say when you are sad? \n")
-    player_energy = 20
-    player_health = 20
-
-def player_tools():
-    player_pack = ["compass"]
-    player_skill = ""
-    player_wallet = 10
-
-player_attribute()
+class Player:
     
+    def __init__(self, name, happy, sad, pack, skill):
+        # Player Attributes
+        self.player_name = name
+        self.player_happy = happy
+        self.player_sad = sad
+        self.player_energy = 20
+        self.player_health = 20
+        # Player tools
+        self.player_pack = ['Compass', pack]
+        self.player_skill = skill
+        self.player_wallet = 10
