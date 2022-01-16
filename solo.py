@@ -1,31 +1,15 @@
+class Player:
+# Holds all characteristics of the player
+    def __init__(self):
+        # Set up player attributes
+        self.player_name = ""
+        self.player_happy = ""
+        self.player_sad = ""
+        self.player_energy = 20
+        self.player_health = 20
 
-import time
-from os import system
 
-# Clear screen and setups up new level name
-def loading_screen(chapter_name = ""):
-    system('clear')
-    print_withpause("Loading.....................", 3)
-    system('clear')
-    print_withpause(chapter_name)
-
-# Prints out dialogue or storyline with an optional pause
-def print_withpause(sentence, timing=2):
-    print(sentence)
-    time.sleep(timing)  
-
-# Introduce the game upon startup
-def welcome_screen():  
-    print_withpause("Welcome to 'Solo' a text based adventure game!")
-    print_withpause("Solo will take you on a wild solo canoe trip down the Widowmaker River!")
-    print_withpause("Do you have what it takes to traverse these deadly waters?", 3)
-    print_withpause("Will you survive?", 3)
-    print_withpause("Let's get started!", 3)
-    loading_screen()
-
-def story_setup():
-    loading_screen("Highway 11: 6 hours since the start of the trip")  
-
-welcome_screen()
-player_setup()
-story_setup()
+    def player_tools(self):
+        self.player_pack = ["compass"]
+        self.player_skill = ""
+        self.player_wallet = 10

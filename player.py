@@ -9,4 +9,6 @@ def player_tools():
     player_pack = ["compass"]
     player_skill = ""
     player_wallet = 10
+
+player_attribute()
     
