@@ -1,4 +1,3 @@
-from pyexpat import features
 import random
 
 class Game_world:
@@ -6,7 +5,6 @@ class Game_world:
         self.time = time
         self.weather = weather
         self.obstacles = obstacles
-        self.features = features
         self.flags = flags
 
 class Game_store:
